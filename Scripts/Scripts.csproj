@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{8455D519-DFE2-4134-B616-84A914DD055A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts.ts" />
+    <TypeScriptCompile Include="interfaces\Bot.ts" />
+    <TypeScriptCompile Include="interfaces\Channel.ts" />
+    <TypeScriptCompile Include="interfaces\ChannelManager.ts" />
+    <TypeScriptCompile Include="interfaces\MemoryHash.ts" />
+    <TypeScriptCompile Include="interfaces\Plugin.ts" />
+    <TypeScriptCompile Include="interfaces\ScriptEngine.ts" />
+    <TypeScriptCompile Include="interfaces\Server.ts" />
+    <TypeScriptCompile Include="interfaces\Session.ts" />
+    <TypeScriptCompile Include="interfaces\User.ts" />
+    <TypeScriptCompile Include="scripts\Module.ts" />
+    <TypeScriptCompile Include="scripts\global\Server.ts" />
+    <TypeScriptCompile Include="scripts\global\Bot.ts" />
+    <TypeScriptCompile Include="scripts\global\Channel.ts" />
+    <TypeScriptCompile Include="scripts\global\ChannelManager.ts" />
+    <TypeScriptCompile Include="scripts\global\User.ts" />
+    <TypeScriptCompile Include="scripts\includes\crc32.ts" />
+    <TypeScriptCompile Include="scripts\includes\file.ts" />
+    <TypeScriptCompile Include="scripts\includes\hash.ts" />
+    <TypeScriptCompile Include="scripts\includes\keys.ts" />
+    <TypeScriptCompile Include="scripts\includes\string.ts" />
+    <TypeScriptCompile Include="scripts\includes\utilities.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Auth.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Base.ts" />
+    <TypeScriptCompile Include="scripts\plugins\ChallengeValidation.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Channels.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Contributions.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Debug.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Empty.ts" />
+    <TypeScriptCompile Include="scripts\plugins\FloodProtection.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Help.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Impersonation.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Importable.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Maintenance.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Me.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Punishment.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Moderation.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Owner.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Preferences.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Registration.ts" />
+    <TypeScriptCompile Include="scripts\plugins\RuntimeStatistics.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Self.ts" />
+    <TypeScriptCompile Include="scripts\plugins\StaffChannel.ts" />
+    <TypeScriptCompile Include="scripts\plugins\TierCheck.ts" />
+    <TypeScriptCompile Include="scripts\plugins\Updates.ts" />
+    <TypeScriptCompile Include="scripts\plugins\UserInfo.ts" />
+    <TypeScriptCompile Include="interfaces\Script.ts" />
+    <Content Include="scripts\conf\api_ip.txt" />
+    <Content Include="scripts\conf\channels_autocreate.txt" />
+    <Content Include="scripts\data\contributors.txt" />
+    <Content Include="scripts\data\stats_keepalive.txt" />
+    <Content Include="scripts\data\stats_started.txt" />
+    <Content Include="scripts\data\stats_usercount.txt" />
+    <Content Include="scripts\data\stats_whoisonline.txt" />
+    <TypeScriptCompile Include="scripts\includes\team.ts" />
+    <Content Include="scripts\includes\team.js">
+      <DependentUpon>team.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\messages\commands.txt" />
+    <Content Include="TODO.txt" />
+    <Content Include="scripts\conf\plugins.txt" />
+    <Content Include="scripts\messages\rules.txt" />
+    <Content Include="scripts\global\Bot.js">
+      <DependentUpon>Bot.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\global\Channel.js">
+      <DependentUpon>Channel.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\global\ChannelManager.js">
+      <DependentUpon>ChannelManager.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\global\User.js">
+      <DependentUpon>User.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\includes\crc32.js">
+      <DependentUpon>crc32.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\includes\file.js">
+      <DependentUpon>file.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\includes\hash.js">
+      <DependentUpon>hash.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\includes\keys.js">
+      <DependentUpon>keys.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\includes\utilities.js">
+      <DependentUpon>utilities.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\Module.js">
+      <DependentUpon>Module.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Debug.js">
+      <DependentUpon>Debug.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Base.js">
+      <DependentUpon>Base.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\ChallengeValidation.js">
+      <DependentUpon>ChallengeValidation.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Channels.js">
+      <DependentUpon>Channels.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\UserInfo.js">
+      <DependentUpon>UserInfo.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Me.js">
+      <DependentUpon>Me.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Contributions.js">
+      <DependentUpon>Contributions.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Auth.js">
+      <DependentUpon>Auth.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Owner.js">
+      <DependentUpon>Owner.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Staff.js">
+      <DependentUpon>StaffChannel.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Moderation.js">
+      <DependentUpon>Moderation.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Empty.js">
+      <DependentUpon>Empty.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\FloodProtection.js">
+      <DependentUpon>FloodProtection.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Help.js">
+      <DependentUpon>Help.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Impersonation.js">
+      <DependentUpon>Impersonation.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Importable.js">
+      <DependentUpon>Importable.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Maintenance.js">
+      <DependentUpon>Maintenance.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Measures.js">
+      <DependentUpon>Punishment.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Preferences.js">
+      <DependentUpon>Preferences.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Registration.js">
+      <DependentUpon>Registration.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\RuntimeStatistics.js">
+      <DependentUpon>RuntimeStatistics.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Self.js">
+      <DependentUpon>Self.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\TierCheck.js">
+      <DependentUpon>TierCheck.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\plugins\Updates.js">
+      <DependentUpon>Updates.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\global\Server.js">
+      <DependentUpon>Server.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts\includes\string.js">
+      <DependentUpon>string.ts</DependentUpon>
+    </Content>
+    <Content Include="scripts.js">
+      <DependentUpon>scripts.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scripts\data\channels\" />
+    <Folder Include="scripts\log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\data\channels.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Scripts</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62665</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49535/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptSourceMap> --sourcemap</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Message Text="Compiling TypeScript files" />
+    <Message Text="Executing tsc$(TypeScriptSourceMap) @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
+    <Exec Command="tsc$(TypeScriptSourceMap) @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
+  </Target>
+</Project>

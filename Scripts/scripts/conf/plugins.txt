@@ -1,0 +1,27 @@
+﻿## DUMMY
+#	Base
+#	Empty
+
+## TESTED
+#	Auth
+#	ChallengeValidation
+#	Channels
+#	Contributions
+#	Debug
+#	FloodProtection
+#	Help
+#	Impersonation
+#	Importable
+#	Maintenance
+#	Me
+#	Moderation
+#	Owner
+#	Preferences
+##Punishment
+#	Registration
+#	RuntimeStatistics
+#	Self
+#	StaffChannel
+#	TierCheck
+#	Updates
+#	UserInfo

@@ -1,0 +1,7 @@
+﻿TODO:	ASSERT ROLES
+TODO:	Command helptext
+
+FIXME:	var mutes, smutes;
+
+IDEA:	Command Aliases / Routes
+IDEA:	I18N

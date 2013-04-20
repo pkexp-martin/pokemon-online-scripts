@@ -1,0 +1,3 @@
+interface IPlugin {
+    sourcePath: string;
+}

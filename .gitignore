@@ -1,0 +1,4 @@
+/Scripts/bin
+/Scripts/obj
+*.suo
+*.csproj.user
